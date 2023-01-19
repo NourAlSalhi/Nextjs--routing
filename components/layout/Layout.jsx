@@ -1,6 +1,6 @@
 import MainHeader from './main-header';
 
-function Layout(props) {
+const Layout = props => {
     return (
         <>
             <MainHeader />
