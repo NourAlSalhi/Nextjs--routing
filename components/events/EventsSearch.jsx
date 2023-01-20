@@ -2,16 +2,14 @@ import { useRef } from 'react';
 import Button from '../ui/Button';
 import classes from './events-search.module.css';
 
-function EventsSearch(props) {
+const EventsSearch = (props) => {
     const yearInputRef = useRef();
     const monthInputRef = useRef();
 
-    function submitHandler(event) {
+    const submitHandler = event => {
         event.preventDefault();
-
         const selectedYear = yearInputRef.current.value;
         const selectedMonth = monthInputRef.current.value;
-
         props.onSearch(selectedYear, selectedMonth);
     }
 

@@ -5,7 +5,7 @@ import ResultsTitle from '../../components/events/ResultsTitle';
 import Button from '../../components/ui/Button';
 import ErrorAlert from '../../components/ui/ErrorAlert';
 
-function FilteredEventsPage() {
+const FilteredEventsPage = () => {
   const router = useRouter();
   const filterData = router.query.slug;
 
