@@ -12,7 +12,6 @@ const EventItem = props => {
     year: 'numeric',
   });
   const formattedAddress = props.location.replace(', ', '\n');
-  const exploreLink = `/events/${props.id}`;
 
   return (
     <li className={classes.item}>
@@ -22,7 +21,7 @@ const EventItem = props => {
           <h2>{props.title}</h2>
           <div className={classes.date}>
             <DateIcon />
-            <time>{humanReadableDate}</time>
+            <time style={{color:'#03be9f'}}>{humanReadableDate}</time>
           </div>
           <div className={classes.address}>
             <AddressIcon />
@@ -30,7 +29,7 @@ const EventItem = props => {
           </div>
         </div>
         <div className={classes.actions}>
-          <Button link={exploreLink}>
+          <Button link={`/events/${props.id}`}>
             <span>Explore Event</span>
             <span className={classes.icon}>
               <ArrowRightIcon />
