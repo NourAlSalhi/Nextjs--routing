@@ -21,7 +21,7 @@ const EventItem = props => {
           <h2>{props.title}</h2>
           <div className={classes.date}>
             <DateIcon />
-            <time style={{color:'#03be9f'}}>{humanReadableDate}</time>
+            <time style={{ color: '#03be9f' }}>{humanReadableDate}</time>
           </div>
           <div className={classes.address}>
             <AddressIcon />
